@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #007AFF !important;
+    
+}
+.container-fluid {
+    display: flex !important;
+    justify-content: center !important; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(0,0,0,.4);
+    padding-top: 10px;
+}
+
+
+.quiz-card {
+    width: 80%;
+    max-width: 1200px;
+}
+
+
+
+.mb-2 {
+    cursor: pointer;
+}
+
+.mb-2:hover {
+    transition: all 225ms ease-in-out;
+    background: rgba(0,0,0,.2);
+}
+
+.disabled {
+    pointer-events: none;
+  
+}
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+.success {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+}
+
+.success img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.success div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.restart {
+    width: 30%;
+}
+
+@media screen and (max-width: 700px) {
+    .quiz-card {
+        width: 100%;
+    }
+}
