@@ -1,12 +1,14 @@
+/* global styles */
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    background: #007AFF !important;
+    background-image: linear-gradient(to right, #fddb92 0%, #d1fdff 100%);
     
 }
+
 .container-fluid {
     display: flex !important;
     justify-content: center !important; 
@@ -30,7 +32,7 @@ main {
 
 
 .quiz-card {
-    width: 80%;
+    width: 60%;
     max-width: 1200px;
 }
 
@@ -73,15 +75,25 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 .restart {
-    width: 30%;
+    width: 50%;
 }
+
+/*responsive */
+@media screen and (max-width: 860) {
+    .restart {
+        position: absolute;
+        bottom: 4rem;
+    }
+}
+
 
 @media screen and (max-width: 700px) {
     .quiz-card {
         width: 100%;
     }
 }
+

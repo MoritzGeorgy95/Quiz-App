@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quizz App</title>
     <link rel="stylesheet" href="style.css" />
     <!-- CSS only -->
     <link
@@ -23,7 +23,7 @@
   <body onload="init()">
     <main>
       <div class="card quiz-card">
-        <img src="images/quiz.jpg" class="card-img-top" alt="quiz-image" />
+        <img src="images/school.jpg" class="card-img-top" alt="quiz-image" />
         <div class="card-body" id="question-container">
           <h5 class="card-title">Question</h5>
           <p class="card-text" id="question">
@@ -43,16 +43,17 @@
           </div>
           <div class="question-footer">
             <div><b id="current-question">1</b> of <b id="number-of-questions">5</b> Questions</div>
-            <button type="button" disabled class="btn btn-primary" id="button">Next Question</button>
+            <button type="button" disabled class="btn btn-warning" id="button">Next Question</button>
           </div>
         </div>
         <div class="progress mt-2 mb-2">
-            <div class="progress-bar  role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
 
     </main>
    
+    <script src="JSON.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
